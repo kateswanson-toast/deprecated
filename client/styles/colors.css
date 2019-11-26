@@ -1,0 +1,5 @@
+@import './constants.css';
+
+.primary {
+  color: var(--colorPrimary);
+}

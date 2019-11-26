@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "react-hot-loader/babel",
+        ["react-css-modules",
+          {
+            "generateScopedName":"[local]"
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+    "react-hot-loader/babel",
+    ["react-css-modules",
+      {
+        "webpackHotModuleReloading": true,
+        "generateScopedName":"[name]__[local]___[hash:base64:5]"
+      }
+    ]
+  ]
+}
